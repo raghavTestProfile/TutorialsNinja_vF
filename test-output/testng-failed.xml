@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Tutorials Ninja Web App]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tutorialsninja.qa.listeners.MyListeners"/>
+  </listeners>
+  <test name="Tutorials Ninja Web App Test Cases(failed)">
+    <classes>
+      <class name="com.tutorialsninja.qa.testcases.Login">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="TC_LF_002_verifyLoginWithInValidCredentialsDataProvider" invocation-numbers="1 2"/>
+          <include name="TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel" invocation-numbers="0 1 2"/>
+          <include name="TC_LF_005_verifyLoginWithputProvidingCredentials"/>
+          <include name="TC_LF_003_verifyLoginWithInalidEmailAndValidPassword"/>
+          <include name="TC_LF_004_verifyLoginWithValidEmailAndInvalidPassword"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.Login -->
+      <class name="com.tutorialsninja.qa.testcases.Search">
+        <methods>
+          <include name="TC_SF_003_verifySearchWithoutEnteringProduct"/>
+          <include name="TC_SF_002_verifySearchWithInValidProduct"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.Search -->
+      <class name="com.tutorialsninja.qa.testcases.Register">
+        <methods>
+          <include name="TC_RF_004_verifyRegisterAccountWithoutGivingAnyFields"/>
+          <include name="setup"/>
+          <include name="TC_RF_009_verifyRegisterAccountWithExsitingEmailAddress"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.Register -->
+    </classes>
+  </test> <!-- Tutorials Ninja Web App Test Cases(failed) -->
+</suite> <!-- Failed suite [Tutorials Ninja Web App] -->
