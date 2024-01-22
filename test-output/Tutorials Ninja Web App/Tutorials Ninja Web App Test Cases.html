@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Tutorials Ninja Web App Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/0/12</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/15</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Oct 31 22:10:11 IST 2023</td>
+<td>Started on:</td><td>Wed Nov 01 02:19:07 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>96 seconds (96760 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48005 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Search.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Search</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.166
+<td title='com.tutorialsninja.qa.testcases.Register_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6db2e00646bccfb7a4519379ea50317f, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62128/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6db2e00646bccfb7a4519379ea50317f
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -91,18 +92,22 @@ Session ID: 6db2e00646bccfb7a4519379ea50317f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Search.setup(Search.java:27)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace429639728", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace429639728'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.166
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1331946439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1331946439'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6db2e00646bccfb7a4519379ea50317f, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62128/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6db2e00646bccfb7a4519379ea50317f
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,9 +120,16 @@ Session ID: 6db2e00646bccfb7a4519379ea50317f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Search.setup(Search.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -147,17 +159,18 @@ Session ID: 6db2e00646bccfb7a4519379ea50317f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Search@1838ccb8</td></tr>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -165,18 +178,22 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1000386113", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1000386113'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace87035052", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace87035052'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -189,9 +206,16 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -221,81 +245,7 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.Register.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Register</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.137
-  (Session info: chrome=118.0.5993.118)
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [99356e72f2fd397a3474ff574803680b, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62252/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 99356e72f2fd397a3474ff574803680b
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Register.setup(Register.java:28)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace771359425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace771359425'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.137
-  (Session info: chrome=118.0.5993.118)
-Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [99356e72f2fd397a3474ff574803680b, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62252/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 99356e72f2fd397a3474ff574803680b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Register.setup(Register.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.Register@73302995</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -305,110 +255,145 @@ Session ID: 99356e72f2fd397a3474ff574803680b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Search.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Search</td>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Search@1838ccb8</td></tr>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Register.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Register</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Register@73302995</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Search.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Search</td>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Search@1838ccb8</td></tr>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Search.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Search</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Search@1838ccb8</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.setup()'><b>setup</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Register.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Register</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Register@73302995</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Register.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Register</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Register@73302995</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Login_Test.tearDown()'><b>tearDown</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -418,35 +403,20 @@ Session ID: 99356e72f2fd397a3474ff574803680b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_001_verifyLoginWithValidCredentials()'><b>TC_LF_001_verifyLoginWithValidCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Search_Test.TC_SF_001_verifySearchWithValidProduct()'><b>TC_SF_001_verifySearchWithValidProduct</b><br>Test class: com.tutorialsninja.qa.testcases.Search_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Search_Test@1838ccb8</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_002_verifyLoginWithInValidCredentials()'><b>TC_LF_002_verifyLoginWithInValidCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
+<td title='com.tutorialsninja.qa.testcases.Search_Test.TC_SF_002_verifySearchWithInValidProduct()'><b>TC_SF_002_verifySearchWithInValidProduct</b><br>Test class: com.tutorialsninja.qa.testcases.Search_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Search_Test@1838ccb8</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_002_verifyLoginWithInValidCredentialsDataProvider()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProvider</b><br>Test class: com.tutorialsninja.qa.testcases.Login<br>Parameters: abs@cmdail.com, 1234</td>
+<td title='com.tutorialsninja.qa.testcases.Search_Test.TC_SF_003_verifySearchWithoutEnteringProduct()'><b>TC_SF_003_verifySearchWithoutEnteringProduct</b><br>Test class: com.tutorialsninja.qa.testcases.Search_Test</td>
 <td></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.Register.TC_RF_001_verifyRegisterAccountWithAllFields()'><b>TC_RF_001_verifyRegisterAccountWithAllFields</b><br>Test class: com.tutorialsninja.qa.testcases.Register</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testcases.Register@73302995</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.Register.TC_RF_001_verifyRegisterAccountWithMandatoryFields()'><b>TC_RF_001_verifyRegisterAccountWithMandatoryFields</b><br>Test class: com.tutorialsninja.qa.testcases.Register</td>
-<td></td>
-<td>1</td>
-<td>com.tutorialsninja.qa.testcases.Register@73302995</td></tr>
-<tr>
-<td title='com.tutorialsninja.qa.testcases.Search.TC_SF_001_verifySearchWithValidProduct()'><b>TC_SF_001_verifySearchWithValidProduct</b><br>Test class: com.tutorialsninja.qa.testcases.Search</td>
-<td></td>
-<td>0</td>
-<td>com.tutorialsninja.qa.testcases.Search@1838ccb8</td></tr>
+<td>com.tutorialsninja.qa.testcases.Search_Test@1838ccb8</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -456,15 +426,16 @@ Session ID: 99356e72f2fd397a3474ff574803680b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_002_verifyLoginWithInValidCredentialsDataProvider()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProvider</b><br>Test class: com.tutorialsninja.qa.testcases.Login<br>Parameters: abs@camdail.com, 12324</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_001_verifyLoginWithValidCredentials()'><b>TC_LF_001_verifyLoginWithValidCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -472,18 +443,22 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace804993772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace804993772'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1282899579", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1282899579'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -496,9 +471,16 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -528,17 +510,18 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_002_verifyLoginWithInValidCredentialsDataProvider()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProvider</b><br>Test class: com.tutorialsninja.qa.testcases.Login<br>Parameters: absdas@cadmail.com, 12324</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_002_verifyLoginWithInValidCredentials()'><b>TC_LF_002_verifyLoginWithInValidCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -546,18 +529,22 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1126074033", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1126074033'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1942612200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1942612200'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -570,9 +557,16 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -602,17 +596,18 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel</b><br>Test class: com.tutorialsninja.qa.testcases.Login<br>Parameters: addasasdbs@cmail.com, 123</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_002_verifyLoginWithInValidCredentialsDataProvider()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProvider</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test<br>Parameters: abs@cmdail.com, 1234</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -620,18 +615,22 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace233142783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace233142783'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace707892422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace707892422'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -644,9 +643,16 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -676,17 +682,18 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel</b><br>Test class: com.tutorialsninja.qa.testcases.Login<br>Parameters: abs2@cmail.com, 124</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_002_verifyLoginWithInValidCredentialsDataProvider()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProvider</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test<br>Parameters: abs@camdail.com, 12324</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -694,18 +701,22 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1622534157", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1622534157'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace951819642", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace951819642'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -718,9 +729,16 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -750,17 +768,18 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel</b><br>Test class: com.tutorialsninja.qa.testcases.Login<br>Parameters: abs@cmastail.com, 125</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_002_verifyLoginWithInValidCredentialsDataProvider()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProvider</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test<br>Parameters: absdas@cadmail.com, 12324</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -768,18 +787,22 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace40626598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace40626598'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2054332292", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2054332292'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -792,9 +815,16 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -824,17 +854,18 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_003_verifyLoginWithInalidEmailAndValidPassword()'><b>TC_LF_003_verifyLoginWithInalidEmailAndValidPassword</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test<br>Parameters: addasasdbs@cmail.com, 123</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -842,18 +873,22 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2097992252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2097992252'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace252339901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace252339901'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -866,9 +901,16 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -898,17 +940,18 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_004_verifyLoginWithValidEmailAndInvalidPassword()'><b>TC_LF_004_verifyLoginWithValidEmailAndInvalidPassword</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test<br>Parameters: abs2@cmail.com, 124</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -916,18 +959,22 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace578362229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace578362229'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace487369776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace487369776'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -940,9 +987,16 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -972,17 +1026,18 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Login.TC_LF_005_verifyLoginWithputProvidingCredentials()'><b>TC_LF_005_verifyLoginWithputProvidingCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.Login</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel()'><b>TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test<br>Parameters: abs@cmastail.com, 125</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -990,18 +1045,22 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1211627902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1211627902'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.043
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1480569460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1480569460'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cb0a7a398e4283177cf61c010e9b52b4, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62234}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62234/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cb0a7a398e4283177cf61c010e9b52b4
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1014,9 +1073,16 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Login.setup(Login.java:31)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1046,17 +1112,18 @@ Session ID: cb0a7a398e4283177cf61c010e9b52b4
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Login@6c2ed0cd</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Register.TC_RF_004_verifyRegisterAccountWithoutGivingAnyFields()'><b>TC_RF_004_verifyRegisterAccountWithoutGivingAnyFields</b><br>Test class: com.tutorialsninja.qa.testcases.Register</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.137
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_003_verifyLoginWithInalidEmailAndValidPassword()'><b>TC_LF_003_verifyLoginWithInalidEmailAndValidPassword</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [99356e72f2fd397a3474ff574803680b, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62252/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 99356e72f2fd397a3474ff574803680b
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -1064,18 +1131,22 @@ Session ID: 99356e72f2fd397a3474ff574803680b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Register.setup(Register.java:28)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1468393491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1468393491'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.137
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1303187181", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1303187181'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [99356e72f2fd397a3474ff574803680b, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62252/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 99356e72f2fd397a3474ff574803680b
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1088,9 +1159,16 @@ Session ID: 99356e72f2fd397a3474ff574803680b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Register.setup(Register.java:28)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1120,17 +1198,18 @@ Session ID: 99356e72f2fd397a3474ff574803680b
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Register@73302995</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Register.TC_RF_009_verifyRegisterAccountWithExsitingEmailAddress()'><b>TC_RF_009_verifyRegisterAccountWithExsitingEmailAddress</b><br>Test class: com.tutorialsninja.qa.testcases.Register</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.137
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_004_verifyLoginWithValidEmailAndInvalidPassword()'><b>TC_LF_004_verifyLoginWithValidEmailAndInvalidPassword</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [99356e72f2fd397a3474ff574803680b, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62252/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 99356e72f2fd397a3474ff574803680b
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -1138,18 +1217,22 @@ Session ID: 99356e72f2fd397a3474ff574803680b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Register.setup(Register.java:28)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace671187578", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace671187578'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.137
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace663925782", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace663925782'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [99356e72f2fd397a3474ff574803680b, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62252/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 99356e72f2fd397a3474ff574803680b
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1162,9 +1245,16 @@ Session ID: 99356e72f2fd397a3474ff574803680b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Register.setup(Register.java:28)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1194,17 +1284,18 @@ Session ID: 99356e72f2fd397a3474ff574803680b
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Register@73302995</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Search.TC_SF_002_verifySearchWithInValidProduct()'><b>TC_SF_002_verifySearchWithInValidProduct</b><br>Test class: com.tutorialsninja.qa.testcases.Search</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.166
+<td title='com.tutorialsninja.qa.testcases.Login_Test.TC_LF_005_verifyLoginWithputProvidingCredentials()'><b>TC_LF_005_verifyLoginWithputProvidingCredentials</b><br>Test class: com.tutorialsninja.qa.testcases.Login_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6db2e00646bccfb7a4519379ea50317f, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62128/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6db2e00646bccfb7a4519379ea50317f
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -1212,18 +1303,22 @@ Session ID: 6db2e00646bccfb7a4519379ea50317f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Search.setup(Search.java:27)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1293495023", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1293495023'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.166
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1976503781", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1976503781'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6db2e00646bccfb7a4519379ea50317f, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62128/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6db2e00646bccfb7a4519379ea50317f
+Command: [24435dfee8ed8ea1b393d9fecb1dc990, clickElement {id=717F0ED90314338A54D9E3CAB4AC3B9F_element_3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53798}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53798/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (24435dfee8ed8ea1b393d9fecb1dc990)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: 24435dfee8ed8ea1b393d9fecb1dc990
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1236,9 +1331,16 @@ Session ID: 6db2e00646bccfb7a4519379ea50317f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Search.setup(Search.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Login_Test.setup(Login_Test.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1268,17 +1370,18 @@ Session ID: 6db2e00646bccfb7a4519379ea50317f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Search@1838ccb8</td></tr>
+<td>com.tutorialsninja.qa.testcases.Login_Test@6c2ed0cd</td></tr>
 <tr>
-<td title='com.tutorialsninja.qa.testcases.Search.TC_SF_003_verifySearchWithoutEnteringProduct()'><b>TC_SF_003_verifySearchWithoutEnteringProduct</b><br>Test class: com.tutorialsninja.qa.testcases.Search</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.166
+<td title='com.tutorialsninja.qa.testcases.Register_Test.TC_RF_001_verifyRegisterAccountWithAllFields()'><b>TC_RF_001_verifyRegisterAccountWithAllFields</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6db2e00646bccfb7a4519379ea50317f, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62128/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6db2e00646bccfb7a4519379ea50317f
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -1286,18 +1389,22 @@ Session ID: 6db2e00646bccfb7a4519379ea50317f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Search.setup(Search.java:27)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1137935956", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1137935956'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 9.166
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace780802740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace780802740'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=118.0.5993.118)
 Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6db2e00646bccfb7a4519379ea50317f, get {url=https://tutorialsninja.com/demo/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62128}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62128/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6db2e00646bccfb7a4519379ea50317f
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1310,9 +1417,16 @@ Session ID: 6db2e00646bccfb7a4519379ea50317f
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:304)
-	at com.tutorialsninja.qa.baseclass.BaseClass.initializeBrowserAndOpenURl(BaseClass.java:52)
-	at com.tutorialsninja.qa.testcases.Search.setup(Search.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1342,7 +1456,265 @@ Session ID: 6db2e00646bccfb7a4519379ea50317f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.tutorialsninja.qa.testcases.Search@1838ccb8</td></tr>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.TC_RF_001_verifyRegisterAccountWithMandatoryFields()'><b>TC_RF_001_verifyRegisterAccountWithMandatoryFields</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=118.0.5993.118)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace105663489", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace105663489'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=118.0.5993.118)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.TC_RF_004_verifyRegisterAccountWithoutGivingAnyFields()'><b>TC_RF_004_verifyRegisterAccountWithoutGivingAnyFields</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=118.0.5993.118)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace902064508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace902064508'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=118.0.5993.118)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
+<tr>
+<td title='com.tutorialsninja.qa.testcases.Register_Test.TC_RF_009_verifyRegisterAccountWithExsitingEmailAddress()'><b>TC_RF_009_verifyRegisterAccountWithExsitingEmailAddress</b><br>Test class: com.tutorialsninja.qa.testcases.Register_Test</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=118.0.5993.118)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace826945968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace826945968'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=118.0.5993.118)
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d5ddde63746f9256ab553e0e0386d28d, clickElement {id=C6203075668A34A8B5E9D28878AF7123_element_55}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.118, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\Raghav\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53716/devtoo..., se:cdpVersion: 118.0.5993.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (d5ddde63746f9256ab553e0e0386d28d)] -&gt; xpath: //span[text()=&apos;My Account&apos;]]
+Session ID: d5ddde63746f9256ab553e0e0386d28d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at com.tutorialsninja.qa.pages.HomePage.click_myAccountDropMenu(HomePage.java:40)
+	at com.tutorialsninja.qa.testcases.Register_Test.setup(Register_Test.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.tutorialsninja.qa.testcases.Register_Test@73302995</td></tr>
 </table><p>
 </body>
 </html>

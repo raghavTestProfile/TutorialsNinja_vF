@@ -1,7 +1,9 @@
 package com.tutorialsninja.qa.testcases;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -140,4 +142,38 @@ public class Login_Test extends BaseClass {
 
 	}
 
+	@Test()
+	public void TC_LF_005_loginwithoutProvidingPassword() {
+
+		loginpage.enter_emailAddress(prop.getProperty("validemail"));
+		loginpage.click_loginButton();
+		Assert.assertTrue(loginpage.getText_credentailsMismatchError()
+				.equalsIgnoreCase("Warning: No match for E-Mail Address and/or Password."));
+
+	}
+
+	@Test()
+	public void TC_LF_006_checkForgotPasswordFuctionality() {
+
+		loginpage.click_forgotPassword();
+		Assert.assertEquals(driver.getCurrentUrl(),
+				"https://tutorialsninja.com/demo/index.php?route=account/forgotten");
+
+	}
+
+	@Test()
+	public void TC_007_loginThrough_Tab_And_Enter() {
+
+		Actions act = new Actions(driver);
+
+		loginpage.enter_emailAddress(prop.getProperty("validemail"));
+		act.sendKeys(Keys.TAB).perform();
+
+		loginpage.enter_password(prop.getProperty("validpassword"));
+		act.sendKeys(Keys.TAB).sendKeys(Keys.TAB).perform();
+
+		act.sendKeys(Keys.ENTER).perform();
+		Assert.assertEquals(accountpage.getText_EditAccInfoTxt(), "Edit your account information");
+
+	}
 }

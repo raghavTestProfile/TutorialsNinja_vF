@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class LoginPage {
 
@@ -20,6 +21,9 @@ public class LoginPage {
 
 	@FindBy(className = "alert-dismissible")
 	private WebElement credentailsMismatchError;
+
+	@FindBy(linkText = "Forgotten Password")
+	private WebElement forgotPassword;
 
 	public LoginPage(WebDriver driver) {
 
@@ -49,6 +53,12 @@ public class LoginPage {
 	public String getText_credentailsMismatchError() {
 
 		return credentailsMismatchError.getText();
+
+	}
+
+	public void click_forgotPassword() {
+
+		forgotPassword.click();
 
 	}
 

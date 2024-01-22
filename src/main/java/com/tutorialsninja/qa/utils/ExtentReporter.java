@@ -2,7 +2,6 @@ package com.tutorialsninja.qa.utils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 import com.aventstack.extentreports.ExtentReports;

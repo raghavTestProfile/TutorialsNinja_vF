@@ -6,33 +6,33 @@
   </listeners>
   <test name="Tutorials Ninja Web App Test Cases(failed)">
     <classes>
-      <class name="com.tutorialsninja.qa.testcases.Login">
+      <class name="com.tutorialsninja.qa.testcases.Login_Test">
         <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="TC_LF_002_verifyLoginWithInValidCredentialsDataProvider" invocation-numbers="1 2"/>
+          <include name="TC_LF_004_verifyLoginWithValidEmailAndInvalidPassword"/>
+          <include name="TC_LF_003_verifyLoginWithInalidEmailAndValidPassword"/>
+          <include name="TC_LF_002_verifyLoginWithInValidCredentials"/>
           <include name="TC_LF_002_verifyLoginWithInValidCredentialsDataProviderExcel" invocation-numbers="0 1 2"/>
           <include name="TC_LF_005_verifyLoginWithputProvidingCredentials"/>
-          <include name="TC_LF_003_verifyLoginWithInalidEmailAndValidPassword"/>
-          <include name="TC_LF_004_verifyLoginWithValidEmailAndInvalidPassword"/>
-        </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.Login -->
-      <class name="com.tutorialsninja.qa.testcases.Search">
-        <methods>
-          <include name="TC_SF_003_verifySearchWithoutEnteringProduct"/>
-          <include name="TC_SF_002_verifySearchWithInValidProduct"/>
+          <include name="TC_LF_001_verifyLoginWithValidCredentials"/>
+          <include name="TC_LF_002_verifyLoginWithInValidCredentialsDataProvider" invocation-numbers="0 1 2"/>
           <include name="setup"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.Search -->
-      <class name="com.tutorialsninja.qa.testcases.Register">
+      </class> <!-- com.tutorialsninja.qa.testcases.Login_Test -->
+      <class name="com.tutorialsninja.qa.testcases.Search_Test">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.Search_Test -->
+      <class name="com.tutorialsninja.qa.testcases.Register_Test">
         <methods>
           <include name="TC_RF_004_verifyRegisterAccountWithoutGivingAnyFields"/>
           <include name="setup"/>
+          <include name="TC_RF_001_verifyRegisterAccountWithMandatoryFields"/>
+          <include name="TC_RF_001_verifyRegisterAccountWithAllFields"/>
           <include name="TC_RF_009_verifyRegisterAccountWithExsitingEmailAddress"/>
-          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.Register -->
+      </class> <!-- com.tutorialsninja.qa.testcases.Register_Test -->
     </classes>
   </test> <!-- Tutorials Ninja Web App Test Cases(failed) -->
 </suite> <!-- Failed suite [Tutorials Ninja Web App] -->

@@ -9,13 +9,15 @@ import org.testng.annotations.Test;
 
 import com.tutorialsninja.qa.baseclass.BaseClass;
 import com.tutorialsninja.qa.pages.HomePage;
+import com.tutorialsninja.qa.pages.LoginPage;
 import com.tutorialsninja.qa.pages.SearchPage;
 
 public class Search_Test extends BaseClass {
 
-	 public WebDriver driver;
+	public WebDriver driver;
 	SearchPage searchpage;
 	HomePage homepage;
+	LoginPage loginpage;
 
 	public Search_Test() {
 		super();
@@ -27,6 +29,8 @@ public class Search_Test extends BaseClass {
 		driver = initializeBrowserAndOpenURl(prop.getProperty("browser"));
 		searchpage = new SearchPage(driver);
 		homepage = new HomePage(driver);
+		loginpage = new LoginPage(driver);
+
 	}
 
 	@AfterMethod
@@ -71,6 +75,23 @@ public class Search_Test extends BaseClass {
 
 		Assert.assertTrue(searchpage.getTxt_ProductNotFound2()
 				.equalsIgnoreCase("There is no product that matches the search criteria."));
+	}
+
+	@Test(priority = 1)
+	public void TC_SF_004_verifySearchWithValidProduct_AfterLogin() {
+
+		homepage.click_myAccountDropMenu();
+		homepage.click_loginButton();
+
+		loginpage.enter_emailAddress(prop.getProperty("validemail"));
+		loginpage.enter_password(prop.getProperty("validpassword"));
+		loginpage.click_loginButton();
+
+		homepage.enter_Searchbar("macbook");
+		homepage.click_searchBtn();
+
+		Assert.assertTrue(driver.findElement(By.linkText("MacBook")).isDisplayed());
+
 	}
 
 }

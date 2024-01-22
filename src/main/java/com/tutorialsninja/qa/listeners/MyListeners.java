@@ -52,6 +52,17 @@ public class MyListeners implements ITestListener {
 
 	public void onTestSkipped(ITestResult result) {
 
+		WebDriver driver = null;
+		try {
+			driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
+					.get(result.getInstance());
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		String destinationScreenshotPath = utilities.captureScreenshot(driver, result.getName());
+		extentTest.addScreenCaptureFromPath(destinationScreenshotPath);
 		extentTest.log(Status.INFO, result.getThrowable());
 		extentTest.log(Status.SKIP, result.getName() + "  got skipped");
 	}

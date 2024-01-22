@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.tutorialsninja.qa.testcases.Search">
+      <class name="com.tutorialsninja.qa.testcases.Search_Test">
         <methods>
-          <include name="setup"/>
           <include name="tearDown"/>
-          <include name="TC_SF_001_verifySearchWithValidProduct"/>
+          <include name="TC_SF_004_verifySearchWithValidProduct_AfterLogin"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.tutorialsninja.qa.testcases.Search -->
+      </class> <!-- com.tutorialsninja.qa.testcases.Search_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
