@@ -94,4 +94,14 @@ public class Search_Test extends BaseClass {
 
 	}
 
+	@Test
+	public void TC_SF_005_verfiyMultipleSearchResults() {
+
+		homepage.enter_Searchbar("Mac");
+		homepage.click_searchBtn();
+
+		Assert.assertEquals(searchpage.SearchResult_Count(), 4);
+
+	}
+
 }

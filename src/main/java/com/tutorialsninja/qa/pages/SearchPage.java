@@ -1,5 +1,8 @@
 package com.tutorialsninja.qa.pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,6 +17,8 @@ public class SearchPage {
 
 	@FindBy(xpath = "//input[@value='Search']/following-sibling::p")
 	private WebElement productNotFound2;
+
+	By SearchItem = By.xpath("//h4/a");
 
 	public SearchPage(WebDriver driver) {
 
@@ -30,6 +35,12 @@ public class SearchPage {
 	public String getTxt_ProductNotFound2() {
 
 		return productNotFound2.getText();
+	}
+
+	public int SearchResult_Count() {
+
+		List<WebElement> ele = driver.findElements(SearchItem);
+		return ele.size();
 	}
 
 }

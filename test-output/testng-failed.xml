@@ -6,7 +6,7 @@
       <class name="com.tutorialsninja.qa.testcases.Search_Test">
         <methods>
           <include name="tearDown"/>
-          <include name="TC_SF_004_verifySearchWithValidProduct_AfterLogin"/>
+          <include name="TC_SF_006_verfiyMultipleSearchResults"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.tutorialsninja.qa.testcases.Search_Test -->
